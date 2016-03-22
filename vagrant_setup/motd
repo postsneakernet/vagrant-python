@@ -1,2 +1,1 @@
-Use --no-bin-links flag for npm e.g. npm install --no-bin-links
-
+For non-privileged scripts to append message of the day to /etc/motd
