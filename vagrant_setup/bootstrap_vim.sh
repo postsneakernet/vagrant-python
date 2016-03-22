@@ -1,3 +1,4 @@
+# non-privileged
 mkdir ~/.vim ~/.vim/autoload ~/.vim/bundle ~/.vim/colors ~/.vim/ftplugin
 
 curl -so ~/.vimrc https://raw.githubusercontent.com/postsneakernet/dotfiles/master/vimrc

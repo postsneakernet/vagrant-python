@@ -5,11 +5,14 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell", path: "vagrant_setup/bootstrap.sh"
+  config.vm.provision "shell", path: "vagrant_setup/bootstrap_apache.sh"
   config.vm.provision "shell", path: "vagrant_setup/bootstrap_jenkins.sh"
   config.vm.provision "shell", path: "vagrant_setup/bootstrap_bash.sh", privileged: false
   config.vm.provision "shell", path: "vagrant_setup/bootstrap_vim.sh", privileged: false
-  config.vm.provision "shell", path: "vagrant_setup/bootstrap_cdev.sh", privileged: false
+  config.vm.provision "shell", path: "vagrant_setup/bootstrap_npm.sh", privileged: false
   config.vm.provision "shell", path: "vagrant_setup/bootstrap_redis.sh", privileged: false
+  config.vm.provision "shell", path: "vagrant_setup/bootstrap_cdev.sh", privileged: false
+  config.vm.provision "shell", path: "vagrant_setup/bootstrap_motd.sh"
   config.vm.box = "ubuntu/trusty64"
   config.vm.hostname = "trusty"
   config.vm.network "forwarded_port", guest: 80,   host: 8888
