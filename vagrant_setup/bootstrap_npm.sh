@@ -1,6 +1,7 @@
 # non-privileged
 sudo curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
 sudo apt-get -qqy install nodejs
+sudo gem install sass
 
 npm config set prefix '/home/vagrant/.npm-packages'
 export PATH="$PATH:$HOME/.npm-packages/bin"
