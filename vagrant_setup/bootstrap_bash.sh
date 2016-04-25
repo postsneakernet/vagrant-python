@@ -7,4 +7,5 @@ echo $'\n' >> ~/.profile
 echo "# virtualenvwrapper settings" >> ~/.profile
 echo "export PROJECT_HOME=/vagrant/projects" >> ~/.profile
 
+mkdir ~/.config
 sudo cp /vagrant/vagrant_setup/flake8 ~/.config/flake8
