@@ -2,7 +2,7 @@
 apt-get -qqy install apache2
 
 mkdir -p /vagrant/projects
-cp -r /var/www/html /vagrant/projects/html
+cp -r /var/www/html /vagrant/projects
 cp /vagrant/vagrant_setup/projectname.conf /etc/apache2/sites-available/projectname.conf
 
 if ! [ -L /var/www ]; then
