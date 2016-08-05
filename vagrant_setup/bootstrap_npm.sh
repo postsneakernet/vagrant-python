@@ -12,6 +12,7 @@ echo 'export PATH="$PATH:$HOME/.npm-packages/bin"' >> ~/.profile
 
 npm install -g bower
 npm install -g grunt-cli
+npm install -g gulp-cli
 
 vagrantTip="Use --no-bin-links flag for npm e.g. npm install --no-bin-links\n"
 echo -e $vagrantTip > /vagrant/vagrant_setup/motd

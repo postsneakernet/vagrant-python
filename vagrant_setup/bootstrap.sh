@@ -4,6 +4,8 @@ apt-get -qqy install python-pip python-dev python3-dev libpq-dev
 apt-get -qqy install git
 apt-get -qqy install vim-gtk
 
+wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+
 pip install virtualenvwrapper
 pip install flake8
 
