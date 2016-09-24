@@ -1,3 +1,4 @@
+# sudo
 apt-get -qqy update
 apt-get -qqy install postgresql
 apt-get -qqy install python-pip python-dev python3-dev libpq-dev
@@ -12,5 +13,5 @@ pip install flake8
 su postgres -c 'createuser -dRS vagrant'
 su vagrant -c 'createdb'
 
-vagrantTip="The shared directory is located at /vagrant\n"
+vagrantTip="Vagrant Tips:\nThe shared directory is located at /vagrant"
 echo -e $vagrantTip > /etc/motd

@@ -1,6 +1,10 @@
 # non-privileged
 sudo curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
 sudo apt-get -qqy install nodejs
+
+sudo apt-add-repository ppa:brightbox/ruby-ng
+sudo apt-get update
+sudo apt-get -qqy install ruby2.3
 sudo gem install sass
 
 npm config set prefix '/home/vagrant/.npm-packages'
@@ -14,5 +18,5 @@ npm install -g bower
 npm install -g grunt-cli
 npm install -g gulp-cli
 
-vagrantTip="Use --no-bin-links flag for npm e.g. npm install --no-bin-links\n"
-echo -e $vagrantTip > /vagrant/vagrant_setup/motd
+vagrantTip="npm: use npm install --no-bin-links if running from a Windows host"
+echo -e $vagrantTip >> /vagrant/vagrant_setup/motd

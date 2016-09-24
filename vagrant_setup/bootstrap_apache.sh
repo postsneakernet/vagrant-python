@@ -12,5 +12,5 @@ fi
 
 apt-get -qqy install libapache2-mod-wsgi
 
-vagrantTip="Apache: projectname.localhost:8888\n"
+vagrantTip="Apache: projectname.localhost:8888"
 echo -e $vagrantTip >> /etc/motd
