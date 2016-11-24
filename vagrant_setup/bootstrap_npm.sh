@@ -17,6 +17,7 @@ echo 'export PATH="$PATH:$HOME/.npm-packages/bin"' >> ~/.profile
 npm install -g bower
 npm install -g grunt-cli
 npm install -g gulp-cli
+npm install -g express-generator
 
 vagrantTip="npm: use npm install --no-bin-links if running from a Windows host"
 echo -e $vagrantTip >> /vagrant/vagrant_setup/motd
