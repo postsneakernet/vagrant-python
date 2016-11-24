@@ -1,5 +1,8 @@
 # sudo
 apt-get -qqy update
+
+timedatectl set-timezon America/New_York
+
 apt-get -qqy install postgresql
 apt-get -qqy install python-pip python-dev python3-dev libpq-dev
 apt-get -qqy install git
