@@ -13,6 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell", path: "vagrant_setup/bootstrap_npm.sh", privileged: false
   config.vm.provision "shell", path: "vagrant_setup/bootstrap_redis.sh", privileged: false
   config.vm.provision "shell", path: "vagrant_setup/bootstrap_cdev.sh", privileged: false
+  config.vm.provision "shell", path: "vagrant_setup/bootstrap_net.sh", privileged: false
   config.vm.provision "shell", path: "vagrant_setup/bootstrap_last.sh"
   config.vm.box = "ubuntu/trusty64"
   config.vm.hostname = "trusty"
