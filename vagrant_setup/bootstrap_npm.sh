@@ -1,5 +1,5 @@
 # non-privileged
-sudo curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
+sudo curl --silent --location https://deb.nodesource.com/setup_6.x | sudo bash -
 sudo apt-get -qqy install nodejs
 
 sudo apt-add-repository ppa:brightbox/ruby-ng
